@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: "Bellota Text", sans-serif;
-    --prim-background: rgba(0, 205,203,255);
-    --sec-background: #fff596;
+    --prim-background: #33ccca ;
+    --sec-background: #ffbd4a;
+    /*--prim-background: rgba(0, 205,203,255);*/
+    /*--sec-background: #fff596;*/
     /*--sec-background: rgb(255, 190, 61);*/
     --tert-background: rgb(253, 214, 136);
     --highlight-prim-background: rgb(25, 212, 212);
-    /* rgba(0,205,203,255)*/
+    /* rgba(0,205,203,255)*/ 
 }
 
 /* google font "Bellota Text" */
