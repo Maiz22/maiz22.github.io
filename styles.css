@@ -3,7 +3,7 @@
     padding: 0;
     font-family: "Bellota Text", sans-serif;
     --prim-background: #33ccca ;
-    --sec-background: #ffbd4a;
+    --sec-background: #b3ceff;
     /*--prim-background: rgba(0, 205,203,255);*/
     /*--sec-background: #fff596;*/
     /*--sec-background: rgb(255, 190, 61);*/
@@ -134,7 +134,7 @@ body {
     }
 
 .custom-separator img {
-    width: 26px;
+    width: 22px;
     margin: 0 1rem;
 }
 
