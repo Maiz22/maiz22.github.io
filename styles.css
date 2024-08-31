@@ -1,0 +1,295 @@
+:root {
+    margin: 0;
+    padding: 0;
+    font-family: "Bellota Text", sans-serif;
+    --prim-background: rgba(0, 205,203,255);
+    --sec-background: #fff596;
+    /*--sec-background: rgb(255, 190, 61);*/
+    --tert-background: rgb(253, 214, 136);
+    --highlight-prim-background: rgb(25, 212, 212);
+    /* rgba(0,205,203,255)*/
+}
+
+/* google font "Bellota Text" */
+
+.bellota-text-light {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bellota-text-regular {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bellota-text-bold {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bellota-text-light-italic {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.bellota-text-regular-italic {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.bellota-text-bold-italic {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Debug */
+
+.placeholder {
+    height: 200px;
+}
+
+/* Main CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--prim-background);
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 2rem);
+    background-color: var(--prim-background);
+    margin: 1rem auto;
+    padding: 1rem
+}
+
+.content-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    transition: max-width 0.4s;
+}
+
+.content {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.socials {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-icon {
+    margin: 0 0.5rem;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
+.socials-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-logo {
+    position: fixed;
+    right: -100%;
+    bottom: 1rem;
+    transition: all 1s;
+}
+
+.whatsapp-logo.active {
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+    transition: right 0.8s;
+}
+
+.whatsapp-logo img {
+    transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-logo img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-separator {
+    margin: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.custom-separator div {
+        background-color: var(--sec-background);
+        height: 1px;
+        width: 100%;
+    }
+
+.custom-separator img {
+    width: 26px;
+    margin: 0 1rem;
+}
+
+.sub-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0.5rem 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    min-height: 160px;
+    min-width: 160px;
+    max-width: 262px;
+    background-color: rgba(52,205,203,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px dotted;*/
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+.card div {
+    margin-bottom: 0.5rem;
+    transition: all 0.4s;
+}
+
+.card img {
+    transition: all 0.3s;
+}
+
+/*.card img:hover:hover {
+    transform: scale(1.03);
+    transition: all 0.3s;
+}*/
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), -8px -8px 8px var(--highlight-prim-background); /*user keyword inset for a button click effect*/
+    transition: all 0.4s;
+}
+
+.card:hover >  img {
+    transform: scale(1.02);
+    transition: all 0.4s;
+}
+
+.card:hover >  div {
+    font-size: 16.3px;
+    transition: all 0.4s;
+}
+
+.centered-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.link-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 3rem;
+    border-radius: 1.25rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    background-color: var(--sec-background);
+    transition: all 0.3s ease-in-out;
+}
+
+.link-container a:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width:380px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+    .single-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        min-height: 160px;
+        width: 100%;
+    }
+}
+
+@media (min-width:576px) {
+    .main-content {
+        max-width: 540px;
+        transition: all 0.4s;
+    }
+}
+
+@media (min-width:768px) {
+    .main-content {
+        max-width: 720px;
+        transition: all 0.4s;
+    }
+
+    .single-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        min-height: 160px;
+        width: 300px;
+        max-width: 300px;
+        transition: all 0.4s;
+    }
+}
