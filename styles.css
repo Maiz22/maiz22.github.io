@@ -79,7 +79,6 @@ body {
     max-width: 600px;
     width: 100%;
     height: auto;
-    opacity: 0.9;
     transition: max-width 0.4s;
 }
 
@@ -97,21 +96,21 @@ body {
 
 .socials-icon {
     margin: 0 0.5rem;
-    opacity: 0.9;
+    opacity: 0.8;
     transition: all 0.3s ease-in-out;
 }
 
 .whatsapp-logo {
     position: fixed;
-    right: -100%;
+    left: -100%;
     bottom: 1rem;
     transition: all 1s;
 }
 
 .whatsapp-logo.active {
     position: fixed;
-    right: 1rem;
-    bottom: 3rem;
+    left: 1rem;
+    bottom: 1rem;
     transition: right 0.8s;
 }
 
@@ -128,14 +127,16 @@ body {
 }
 
 .custom-separator div {
-        background-color: var(--sec-background);
-        height: 1px;
-        width: 100%;
-    }
+    background-color: white;
+    height: 1px;
+    width: 100%;
+    opacity: 0.8;
+}
 
 .custom-separator img {
     width: 22px;
     margin: 0 1rem;
+    opacity: 0.8;
 }
 
 .sub-title {
@@ -189,6 +190,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top:1.5rem;
 }
 
 .link-container {
@@ -212,6 +214,11 @@ body {
     background-color: var(--sec-background);
     transition: all 0.3s ease-in-out;
 }
+
+.google-maps {
+    margin-right: .5rem;
+}
+
 
 @media (hover: hover) {
     .socials-icon:hover {
