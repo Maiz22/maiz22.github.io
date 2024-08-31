@@ -99,13 +99,6 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.socials-icon:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-}
-
 .whatsapp-logo {
     position: fixed;
     right: -100%;
@@ -121,12 +114,6 @@ body {
 }
 
 .whatsapp-logo img {
-    transition: all 0.3s ease-in-out;
-}
-
-.whatsapp-logo img:hover {
-    cursor: pointer;
-    transform: scale(1.1);
     transition: all 0.3s ease-in-out;
 }
 
@@ -190,27 +177,6 @@ body {
     transition: all 0.3s;
 }
 
-/*.card img:hover:hover {
-    transform: scale(1.03);
-    transition: all 0.3s;
-}*/
-
-.card:hover {
-    cursor: pointer;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), -8px -8px 8px var(--highlight-prim-background); /*user keyword inset for a button click effect*/
-    transition: all 0.4s;
-}
-
-.card:hover >  img {
-    transform: scale(1.02);
-    transition: all 0.4s;
-}
-
-.card:hover >  div {
-    font-size: 16.3px;
-    transition: all 0.4s;
-}
-
 .centered-text {
     display: flex;
     align-items: center;
@@ -245,9 +211,37 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.link-container a:hover {
-    transform: scale(1.02);
-    transition: all 0.3s ease-in-out;
+@media (hover: hover) {
+    .socials-icon:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+    .whatsapp-logo img:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+    }
+    .card:hover {
+        cursor: pointer;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), -8px -8px 8px var(--highlight-prim-background); /*user keyword inset for a button click effect*/
+        transition: all 0.4s;
+    }
+    
+    .card:hover >  img {
+        transform: scale(1.02);
+        transition: all 0.4s;
+    }
+    
+    .card:hover >  div {
+        font-size: 16.3px;
+        transition: all 0.4s;
+    }
+    .link-container a:hover {
+        transform: scale(1.02);
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 
