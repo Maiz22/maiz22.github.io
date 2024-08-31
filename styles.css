@@ -254,7 +254,10 @@ body {
 }
 
 @media (hover: none) {
-
+    .card {
+        border: 1px dotted;
+        border-color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 
