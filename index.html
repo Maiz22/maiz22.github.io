@@ -10,6 +10,10 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <script src="index.js"></script>
     </head>
     <body>
@@ -30,7 +34,7 @@
                                 alt=""
                             />
                         </a>
-                        <a href="https://www.facebook.com/nickole.stumpfs">
+                        <a href="">
                             <img
                                 class="socials-icon"
                                 src="icons/facebook-icon-purple.png"
@@ -115,11 +119,11 @@
                     <div></div>
                 </div>
                 <div class="content">
-                    <div class="sub-title">Atendemos</div>
-                    <div class="centered-text">
+                    <div class="sub-title" data-aos="fade-up">Atendemos</div>
+                    <div class="centered-text" data-aos="fade-up">
                         De Lun. a Vier. De 9:00 hs. a 18:00 hs.
                     </div>
-                    <div class="centered-text">
+                    <div class="centered-text" data-aos="fade-up">
                         Sábados de 10.00 hs. a 20:00 hs.
                     </div>
                 </div>
@@ -133,8 +137,8 @@
                     <div></div>
                 </div>
                 <div class="content">
-                    <div class="sub-title">Yoga Online</div>
-                    <div>
+                    <div class="sub-title" data-aos="fade-up">Yoga Online</div>
+                    <div data-aos="fade-up">
                         En Kalā, te ofrecemos la posibilidad de practicar yoga
                         desde la comodidad de tu hogar. A través de nuestras
                         clases online, podrás acceder a una variedad de estilos
@@ -156,8 +160,10 @@
                     <div></div>
                 </div>
                 <div class="content">
-                    <div class="sub-title">Registros Akáshicos Online</div>
-                    <div>
+                    <div class="sub-title" data-aos="fade-up">
+                        Registros Akáshicos Online
+                    </div>
+                    <div data-aos="fade-up">
                         Descubre el poder de los Registros Akáshicos en una
                         sesión online personalizada. Los Registros Akáshicos son
                         una herramienta de autoconocimiento profundo que te
@@ -179,8 +185,8 @@
                     <div></div>
                 </div>
                 <div class="content">
-                    <div class="sub-title">E-books</div>
-                    <div>
+                    <div class="sub-title" data-aos="fade-up">E-books</div>
+                    <div data-aos="fade-up">
                         Explora nuestra biblioteca de e-books diseñados para
                         apoyarte en tu crecimiento personal, bienestar y
                         expansión espiritual. Estos recursos, creados con amor y
@@ -201,8 +207,8 @@
                     <div></div>
                 </div>
                 <div class="content">
-                    <div class="sub-title">Talleres</div>
-                    <div>
+                    <div class="sub-title" data-aos="fade-up">Talleres</div>
+                    <div data-aos="fade-up">
                         Nuestros talleres están diseñados para profundizar en el
                         autoconocimiento, el crecimiento personal y la sanación
                         a través de distintas herramientas espirituales.
@@ -225,7 +231,7 @@
                     <div></div>
                 </div>
                 <div class="content">
-                    <div class="sub-title">
+                    <div class="sub-title" data-aos="fade-up">
                         <img
                             class="google-maps"
                             src="icons/google-maps.png"
@@ -233,7 +239,7 @@
                             alt=""
                         />Cómo llegar
                     </div>
-                    <div class="map">
+                    <div class="map" data-aos="zoom-in">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.8256731186084!2d-57.602908988993796!3d-25.27644907756684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da7cceb7de22b%3A0x3062dec2d8f3fbf6!2sEdificio%20Florida%2C%20Florida%201185%2C%20Asunci%C3%B3n%20001205%2C%20Paraguay!5e0!3m2!1sde!2sde!4v1727347112372!5m2!1sde!2sde"
                             width="100%"
@@ -250,5 +256,9 @@
                 </div>
             </div>
         </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init()
+        </script>
     </body>
 </html>
